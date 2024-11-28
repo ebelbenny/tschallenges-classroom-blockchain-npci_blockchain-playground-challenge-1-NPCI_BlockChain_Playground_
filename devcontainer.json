@@ -1,0 +1,10 @@
+{
+  "name": "Chat Server Development",
+  "image": "mcr.microsoft.com/devcontainers/go:1.21", // Go environment
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "extensions": ["golang.go"], // Add useful extensions
+  "postCreateCommand": "go mod tidy && sudo apt update && sudo apt install -y netcat " // Ensure Netcat is installed and dependencies are set up
+}
+
