@@ -17,17 +17,25 @@ Build a basic chat server in Go where multiple users can connect and send messag
 - Present your solution to the instructor for evaluation.
 
 ## Requirements
-Just three commands need to work:```
-/users  - See who's online
-/quit   - Leave the chat
-hello   - Send "hello" to everyone
-```
+Just three commands need to work:
+- /users  - See who's online
+- /quit   - Leave the chat
+- hello   - Send "hello" to everyone
+
+
 
 ## Getting Started
-1. Start with the provided code below
-2. Run the server: `go run server.go`
-3. Connect using netcat: `nc localhost 8080`
-4. Type messages to chat!
+
+1. Start with the provided code in `server.go` and fill in your TODO's.
+2. Open the terminal and run the server:`go run server.go`
+3. Open a new terminal and install netcat by running the following commandsone by one:
+
+   ` sudo apt update`
+
+   ` sudo apt install -y netcat`
+5. Once netcat is installed, connect to the server using: `nc localhost 8080`
+6. You will be prompted to enter a username. Type in your desired username and hit Enter. To add more users, repeat `step 4` in additional terminals. You can have as many users as needed.
+7. After connecting, you can type messages to chat with other users. You can also use the following commands: `/users` , `/quit` and `hello` 
 
 ## What You Need to Know
 - Basic Go syntax
